@@ -68,7 +68,7 @@ function sqrtArr(numx) {
   through every root in an array */
 
   numx.forEach(function (numt) {
-    const w = Math.sqrt(numt);
+    const w = Math.sqrt(numt); //Declaring a value where square rooting will take place
     setArr.push(w); //pushing data into the empty array
   });
 }
@@ -81,3 +81,38 @@ newArr.forEach(thisFunction);
 function thisFunction(number) {
   Math.sqrt[newArr] = number;
 } */
+console.log("");
+let newNum = [9, 25, 16];
+
+// newNum.map();
+
+function squares(d) {
+  const mr = d.map((loya) => Math.sqrt(loya));
+
+  for (i = 0; i < mr.length; i++) {
+    console.log(`${newNum[i]}: ${mr[i]}`);
+  }
+
+  if (i % 2 == 0) {
+    console.log(`${i}`);
+  } else {
+    console.log("Not square");
+  }
+}
+squares(newNum);
+
+/*function sqrRoot(daph) {
+  daph.forEach(function (wicks) {
+    const p = Math.sqrt(wicks);
+    emptyArr.push(p);
+
+    if (emptyArr % 2 == 0) {
+      console.log("Even SquareRoot:");
+    } else {
+      ("Odd SquareRoot");
+    }
+  });
+}
+sqrRoot(newNum);
+console.log(emptyArr);
+*/
