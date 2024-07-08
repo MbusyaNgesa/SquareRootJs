@@ -101,6 +101,16 @@ function squares(d) {
 }
 squares(newNum);
 
+console.log("");
+
+let me = [25, 49, 64];
+let empt = [];
+
+function kamau(baba) {
+  return baba.map((num) => Math.sqrt(num)).filter((root) => root % 2 === 0);
+}
+console.log(kamau(me));
+
 /*function sqrRoot(daph) {
   daph.forEach(function (wicks) {
     const p = Math.sqrt(wicks);
